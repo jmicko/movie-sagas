@@ -19,7 +19,12 @@ function* rootSaga() {
 }
 
 function* fetchMovies() {
-
+    try {
+        const response = yield axios.get(`/api/movie`);
+        yield put({ type: 'SET_MOVIES' })
+    } catch (error) {
+        console.log('error with add element request', error);
+    }
 }
 
 
