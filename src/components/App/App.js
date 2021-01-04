@@ -10,11 +10,12 @@ class App extends Component {
         <h1>Movies!</h1>
         <Router>
           {/* ADD PAGES! */}
+          
         </Router>
         <p>Empty Page</p>
       </div>
     );
   }
 }
-
+ hello
 export default App;
